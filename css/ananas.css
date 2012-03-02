@@ -493,3 +493,19 @@ text-transform:uppercase;
 
   text-decoration:none;
  }
+
+ .footer_icon li 
+ {
+  display:inline;
+  padding:0px;
+  margin:0px;
+  opacity:0.9;
+ }
+.footer_icon li:hover {opacity:1;}
+
+ ul.footer_icon 
+ {
+  margin-top:10px;
+    display:inline;
+
+ }
