@@ -1,71 +1,93 @@
-@font-face {
+@font-face 
+{
   font-family: 'Blanch Caps';
   src: url('../typo/blanch_caps.ttf');
 }
 
-body {
-  padding:0px;
+@font-face 
+{
+  font-family: 'Jockey One';
+  src: url('../typo/JockeyOne-Regular.ttf');
+}
 
+
+body
+{
+  padding:0px;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+html 
+{
+  font-size:62.5%;
 }
 
 /*
  * Template 
  **********************/
 
-.header 
+ .header 
  {
-  background-image:url("../pics/bg_header/01.jpg");
+  background-image:url("../pics/bg_header/01.gif");
   background-position: center center;
   background-repeat: repeat;
   width: 100%;
   height:680px;
- }
- 
- .calque_header
- {
+}
+
+.header_calque
+{
   background-image:url("../pics/pattern/pat-header.png");
   background-repeat: repeat;
   width: 100%;
   height:680px;
-    position:absolute;
+  position:absolute;
+}
 
- }
-
-.discogs
- {
-   background-image:url(../pics/pattern/pat-bg.png);
-   background-repeat:repeat;
-   background-color:#000;
-   padding:30px 0px 40px 0px;
-  }
+.releases_discography
+{
+ background-image:url(../pics/pattern/pat-bg.png);
+ background-repeat:repeat;
+ background-color:#000;
+ padding:30px 0px 40px 0px;
+}
 
 
- .artists
- {
+.releases_discography_number_default 
+{
+background-image:url(../pics/releases/img-release-default.png);
+height:290px;
+width:220px;
+margin-top:5px;
+}
+
+.artists_listing_all,.release_open
+{
  background-image:url(../pics/pattern/pat-bg.png);
  background-repeat:repeat;
  background-color:#fff;
  padding:30px 0px 100px 0px;
- }
- .infos
- {
+}
+
+.infos
+{
  background-image:url(../pics/pattern/pat-bg.png);
  background-repeat:repeat;
  background-color:#000;
-padding:30px 0px 50px 0px;
- }
+ padding:30px 0px 50px 0px;
+}
 
-
- .footer
-  {
+.footer
+{
  background-image:url(../pics/pattern/pat-foot.png);
  background-repeat:repeat;
  background-color:#000;
-padding:30px 0px 100px 0px;
- }
+ padding:30px 0px 100px 0px;
+}
 
- .discogs_content, .artists_content,  .header_content, .category_content,.navbar_content,.infos_content,.footer_content
-{
+
+.category_content, .releases_discography_listing_all, .artists_content,.header_content,  .header_news_1_content,.header_news_2_content, .releases_content,.header_nav_3_content,.infos_content,.footer_content,.release_content
+{ 
   width:960px;
   margin-left: auto;
   margin-right: auto;
@@ -73,311 +95,380 @@ padding:30px 0px 100px 0px;
 
 
 /*
- * NAVBAR 
+ * header_nav_3 
  *******************************/
+
  /* upnav */
-.icon li 
+
+ .header_nav_2
  {
+  margin-top:12px!important;
+}
+
+.header_nav_2_icon li 
+{
   display:inline;
   padding:0px;
   margin:0px;
   opacity:0.9;
- }
-.icon li:hover {opacity:1;}
+}
 
- ul.icon 
- {
-  margin-top:10px;
-    display:inline;
+.header_nav_2_icon li:hover 
+{
+  opacity:1;
+}
 
- }
-
-.upnav a 
- {
+.header_title_dhr a 
+{
   color:#FFF;
   text-decoration:none;
   margin-bottom:-10px;
-  font-family: arial, verdana, sans-serif;
- }
-
-.upnav h1 a
- {
   font-family: 'Blanch Caps', sans-serif;
-  color:#FFF;
-  font-size:1.2em;
   margin-left:20px;
- }
+}
 
-.lang 
- {
+
+.header_nav_2_button_lang 
+{
  background-color:#000;
- }
- 
-.lang a 
- {
+}
+
+.header_nav_2_button_lang a 
+{
  color: #29ABE2;
  text-decoration:none;
-  padding:2px;
+ padding:2px;
+}
 
- }
- 
-.navbar 
-  {
-    width:100%!important;
-    background-color:#000;
-    height:50px;
-    margin-top:-20px;
-  }
+.header_nav_3 
+{
+ width:100%!important;
+ background-color:#000;
+ height:50px;
+ margin-top:-20px;
+}
 
-.navbar ul 
- {
+.header_nav_3 ul 
+{
   background-color:#000;
- }
-  
-.navbar li
- {
+}
+
+.header_nav_3 li
+{
   color:#29ABE2;
-  font-size:2.25em;
   list-style-type:none;
   display:inline;
   margin:5px;
-   font-family: 'Jockey One', sans-serif;
+  font-family: 'Jockey One', sans-serif;
+}
 
- }
-
-.navbar a 
- {
+.header_nav_3 a 
+{
   color:#29ABE2;
   text-decoration:none;
   text-transform:uppercase;
- }
- 
-.logo
- {
-margin:0 ;
-padding:0;  background-color:#000;
- }
- 
-.donate 
-{
-}
-.donate a
- {
-  color:#ea1D78;
-  opacity:0.9;
- }
-.donate a:hover  {opacity:1;}
+  font-size:28px;
+  font-size:2.8rem}
+
+
+
+  .header_nav_3_button_donate a
+  {
+    color:#ea1D78;
+    opacity:0.9;
+  }
+
+  .header_nav_3_button_donate a:hover  {opacity:1;}
 
 /*
  *  BIG NEWS
  *************************/
  
- .big_news 
+ .header_news_1_content,.header_news_2_content 
  {
- font-family: 'Jockey One', sans-serif;
- text-align:right;
-margin-top:112px;}
+   font-family: 'Jockey One', sans-serif;
+   text-align:right;
+   margin-top:112px;}
 
- .big_news a 
- {
- text-decoration:none;
- }
+   .header_news_1_content a,.header_news_2_content a  
+   {
+     text-decoration:none;
+   }
 
- .big_news h1 
- {margin-bottom:-20px; margin-right:13px!important;
-}
+   .header_news_1_content h1 
+   {
+    margin-bottom:-20px;
+    margin-right:13px;
+  }
 
- .big_news h1 a 
- {
- color:#FFF;
- font-size:2.3em;
- font-weight:lighter;
+  .header_news_1_content h1 a 
+  {
+   color:#FFF;
+   font-weight:lighter;
+   font-size:60px;
+   font-size:6rem;
  }
  
- .big_news h2 a 
+ .header_news_1_content h2 a 
  {
-
- color:#fced20;
- font-size:2em;
-  font-weight:lighter;
-
+   color:#fced20;
+   font-weight:lighter;
+   font-size:48px;
+   font-size:4.8rem
  }
 
 /*
   * MICRONEWS
   *******************/
-  
-  .pics_micronews 
-  {
-  margin-left:20px;
-  background-color:#000;
-  opacity:0.95;
-  padding:5px 5px 0px 5px;
-  }
 
-  .pics_micronews img 
+  .header_news_2
   {
-    margin:5px 5px 0px 5px;
-  }
-  
-  .descr_micronews p
-  {
-  background-color:#000;
-  opacity:0.95;
+   background-color:#000;
+   opacity:0.95;
+   padding-top:10px;
+   min-height:90px;
+  border-right:2px solid #28abe3; }  
+
+ .header_news_2_nav
+ {
+  padding-bottom:5px;
+  float:right;
+  margin-top:-10px;
+}
+
+.header_news_2_nav a 
+{
+  padding:0px 2px 0px 2px;
+}
+
+.header_news_2_title 
+{    
+  font-family: 'Jockey One', sans-serif;
   color:#FFF;
-  padding:10px;
-  min-height:110px;
-  }
+  font-weight:lighter;
+  margin-left:20px;
+  text-transform:uppercase;
+  margin-bottom:5px;
+  font-size:17px;
+  font-size:1.7rem;
+  text-align:left;
+}
+
+.header_news_2_title a
+{
+  color:#FFF;
+}
+
+.header_news_2_pictures
+{
+  padding-bottom:0px;
+  margin-top:-4px;
+}
+
+.header_news_2_pictures img 
+{
+  margin:10px;
+}
+
+.header_news_2_descr p
+{
+  color:#FFF;
+  margin:0px 10px 0px 10px;
+  padding:0px 10px 0px 10px;
+  font-size:13px;
+  font-size:1.3rem;
+  text-align:justify;
+}
 
 /*
   * DISCOGS 
   ********************/
 
-.category_artists
- {
-  background-color:#000;
-  background-image:url(../pics/pattern/pat-bg.png);
-  background-repeat:repeat;
- }  
+  .artists
+  {
+    background-color:#000;
+    background-image:url(../pics/pattern/pat-bg.png);
+    background-repeat:repeat;
+  }  
 
-.category_releases,.category_infos  
+  .releases,.category_infos  
   {
    background-color:transparent;
-   margin-top:-50px!important;
+   margin-top:-40px!important;
+   margin-top:-10px;
+ }
 
-  }
-
-.category_artists h1,
-.category_releases h1,
-.category_infos h1
+ .artists h1,
+ .releases h1,
+ .category_infos h1
  {
    font-family: 'Jockey One', sans-serif;
-   font-size:2.5em!important;
    font-weight:lighter;
    background-image:url(../pics/pattern/pat-bg.png);
    background-repeat:repeat;
    display:inline;
    padding:5px;
+   margin:0px 0px 0px 0px;
    text-transform:uppercase;
+   font-size:27px;
+   font-size:2.7rem
  }
-  
-.category_artists h1
-  {
+
+.infos_button_top,.footer_button_top 
+{
+float:right;
+padding:0px;
+margin:0px 0px 0px 0px;
+  height:20px;
+   width:20px;
+   text-align:center;
+ }
+
+.infos_button_top 
+{
+   margin-top:20px;
+
+    background-image:url(../pics/pattern/pat-bg.png);
+   background-repeat:repeat;
+ background-color:#000; 
+}
+
+.footer_button_top
+{
+   margin-top:-50px;
+
+  background-image:url(../pics/pattern/pat-foot.png);
+   background-repeat:repeat;
+ background-color:#000;
+}
+
+ .artists h1
+ {
    background-color:#FFF;
    color:#000;
-  }
+ }
 
-.category_releases h1,
-.category_infos h1
-  {
+ .releases h1,
+ .category_infos h1
+ {
    background-color:#000;
    color:#FFF;
-  }
+ }
 
-.discogs_show,.artists_show
+ .releases_discography_number,.artists_show
  {
   font-weight:none;
-    margin:5px;
- }
- .discogs_show
- {
-    background-color:#FFF;
+  margin:5px;
+}
 
- }
+.artists_show_default 
+{
+background-image:url(../pics/artists/img-artist-default.png);
+height:240px;
+width:250px;
+}
 
-.discogs_show h1 
- {
+
+.releases_discography_number
+{
+  background-color:#FFF;
+}
+
+.releases_discography_number h1 
+{
   padding:0px;
   margin:0px 0px -10px 0px;
- }
-  
-.newrelease 
- {
+}
+
+.releases_discography_last_release 
+{
   background-repeat:no-repeat;
   height:16px;
   width:68px;
   position: absolute;
   margin-top:20px;
- }
-  
+}
 
 
 .calque_releases
- {
+{
   position:absolute;
   height:220px;
   width:220px;
   background-image:url("../pics/releases/img-release.png");
- }
- .calque_releases:hover
- {
-    background-image:url("../pics/releases/img-release-hover.png");
-
- }
-
-.discogs_show h1 
-{  margin-top:-10px;
-  padding:0px 0px 0px 10px;
-}
-.discogs_show h2 
-{  margin-top:-20px;
-  padding:0px 0px 0px 10px;
 }
 
-.discogs_show h1 a 
- {
+.calque_releases:hover
+{
+  background-image:url("../pics/releases/img-release-hover.png");
+}
+
+.releases_discography_number h1 
+{ 
+ padding:0px 0px 0px 10px;
+ font-size:15px;
+ font-size:1.5rem;
+}
+
+.releases_discography_number h2 
+{
+ padding:0px 0px 0px 10px;  
+ font-size:18px;
+ font-size:1.8rem;
+}
+
+.releases_discography_number h1 a 
+{
   color:#29ABE2;
   text-decoration:none;
-  font-size:0.6em;
   text-transform:uppercase;
   font-weight:normal;
-   font-family: 'Jockey One', sans-serif;
+  font-family: 'Jockey One', sans-serif;
+}
 
- }
-  
-.discogs_show h2 a 
- {
+.releases_discography_number h2 a 
+{
   color:#000;
   text-decoration:none;
-  font-size:0.7em;
   text-transform:uppercase;
   margin-top:-5px;
   font-weight:normal;
   font-family: 'Jockey One', sans-serif;
+}
 
- }
-
-ul.button 
- {
+ul.releases_discography_button 
+{
   margin-top:-20px;
   margin-left:10px;
- }
-  
-.button li
- {
-   display:inline;
-   padding:0px;
-   margin:0px;
-  }
+}
 
-.button li a 
- {
+.releases_discography_button  li
+{
+ display:inline;
+ padding:2px;
+ margin:0px;
+ font-size:10px;
+ font-size:1rem;
+}
+
+.releases_discography_button li a 
+{
   background-color:#000;
   color:#29ABE2;
   text-decoration:none;
   padding:5px;
   font-weight:normal;
-  font-size:0.8em;
   text-transform:uppercase;
- }
+}
 
 /* artists */
 
-.artists_photos
-  {
-   border-radius:200px;
-   margin-top:10px;
-  }
+
+.artists_pictures
+{
+ border-radius:200px;
+ margin-top:10px;
+}
 
 
 .artists_title a
@@ -388,33 +479,33 @@ ul.button
 }
 
 p.artists_title 
-  {
-    position: absolute;
-    font-size:1.4em;
-    font-weight:lighter;
-    font-family: 'Jockey One', sans-serif;
-    margin-top:-75px;
-    margin-left:35px;
-    transform:rotate(-55deg);
-
-  }
+{
+  position: absolute;
+  font-weight:lighter;
+  font-family: 'Jockey One', sans-serif;
+  margin-top:-75px;
+  margin-left:35px;
+  transform:rotate(-55deg);
+  font-size:19px;
+  font-size:1.9rem;
+}
 
 .calque_artists 
-  {
-    position:absolute;
-    height:233px;
-    width:220px;
-    margin-top:-3px!important;
-    background-image:url("../pics/artists/img-artist.png");
-  }
+{
+  position:absolute;
+  height:233px;
+  width:220px;
+  margin-top:-3px!important;
+  background-image:url("../pics/artists/img-artist.png");
+}
 
 .calque_artists:hover
-  {
-    background-image:url("../pics/artists/img-artist-hover.png");
-  }
+{
+  background-image:url("../pics/artists/img-artist-hover.png");
+}
 
 /* INFOS */
-  
+
 .infos_descr h1,
 .infos_descr h2,
 .infos_descr h3,
@@ -422,26 +513,29 @@ p.artists_title
 {
   color:#FFF;
   font-family: 'Jockey One', sans-serif;
-  font-size:1.8em;
-font-weight:normal;
-text-transform:uppercase;
+  font-weight:normal;
+  text-transform:uppercase;
 }
+
 .infos_descr 
 {
 
-  color:#b2b2b2;    font-family: "Arial", Helvetica, sans-serif;
-  font-size:0.9em;
+  color:#b2b2b2;
   text-align:left;
 }
+
 .infos_descr li 
-{list-style-type:none;
+{
+  list-style-type:none;
   margin-left:0px;
 }
+
 .infos_descr a
 {
   color:#12546c;
   text-decoration:none;
 }
+
 .infos_vids
 {
  margin-left:20px;
@@ -451,61 +545,239 @@ text-transform:uppercase;
  * footer 
  *********************/
 
-.footer_content h1, .footer_content h2 
-{
+.footer_content p 
+{color:#FFF;}
+ .footer_content h1, .footer_content h2 
+ {
   font-weight:normal;
   text-transform:uppercase;
   font-family: 'Jockey One', sans-serif;
-  } 
+} 
 
-  .footer_content h2
- {
+.footer_content h2
+{
   color:#FFF;
-  font-size:1.2em;
- } 
+  font-size:15px;
+  font-size:1.5rem;
+  opacity:0.7;
+  margin:10px 0px 0px 0px;} 
 
- .footer_content h1 
- {
- color:#FFF;
- font-size:1.7em;
- background-color:#000;
-    background-image:url(../pics/pattern/pat-bg.png);
+  .footer_content h1 
+  {
+   color:#FFF;
+   background-color:#000;
+   background-image:url(../pics/pattern/pat-bg.png);
    background-repeat:repeat;
    display:inline;
    padding:2px 4px 2px 4px;
+   font-size:20px;
+   font-size:2rem;
  }
 
- .footer_content ul, li 
+ .footer_links_1 ul, li, .footer_links_2 ul, li 
  {
   list-style-type:none;
- }
-
- .footer_content li 
-{
-    margin:5px 0px 5px 0px;
-    padding-left:10px;
 }
- .footer_content li a 
- {
+
+.footer_links_1 li, .footer_links_2 li 
+{
+  margin:5px 0px 5px 0px;
+  padding-left:10px;
+}
+.footer_links_1 li a, .footer_links_2 li a 
+{
   color:#12546C;
   background-color:#000;
   padding:2px;
-
   text-decoration:none;
- }
+}
 
- .footer_icon li 
- {
+.footer_links_2
+{
+  margin-top:30px;
+}
+.footer_nav_1 li 
+{
   display:inline;
   padding:0px;
   margin:0px;
-  opacity:0.9;
- }
-.footer_icon li:hover {opacity:1;}
 
- ul.footer_icon 
+}
+
+.footer_nav_1 li:hover {opacity:1;}
+
+ul.footer_nav_1 
+{
+  margin:-25px 0px 0px 20%;
+  opacity:0.3;
+  padding:2px;
+
+}
+
+ /*
+ * RELEASE OPEN */
+
+ .release_open h1, .release_open h2, .release_open h3,.release_title h1, .release_title h2, .release_title h3
  {
-  margin-top:10px;
-    display:inline;
-
+   font-weight:normal;
+   text-transform:uppercase;
+   font-family: 'Jockey One', sans-serif;
  }
+
+ .release_open h1.title, .release_open h2.title, .release_open h3.title
+ {
+  color:#1A1A1A;
+  font-size:16px;
+  font-size:1.6rem;
+
+}
+.release_open h1.catalog  
+{
+  color: #29abe2;
+  font-size:20px;
+  font-size:2rem;
+}
+
+.release_open h2 
+{
+ margin-top:-30px;
+ font-size:33px;
+ font-size:3.3rem;
+ color:#1A1A1A;
+}
+
+.release_open h2 a
+{
+  color:#000;
+  text-decoration:none;
+}
+
+
+
+.release_artist_name
+{
+  font-size:33px;
+  font-size:3.3rem;
+  color:#b2b2b2;
+  margin-top:-40px;
+}
+
+.release_title h3
+{
+  color:#b2b2b2;
+}
+
+.release_playlist li 
+{
+  background-color: #e6e6e6;
+  padding:1px;
+  margin:2px;
+}
+
+ul.release_playlist
+{
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+.release_playlist li:before
+{
+  content: "";
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+.release_open li a 
+{
+  text-decoration:none;
+  color:#000;
+}
+
+.press_text
+{
+  color:#666;
+  margin-top:-10px; 
+  padding-bottom:20px;
+}
+
+ul.button_release
+{
+  margin-bottom:10px;
+  text-align:right;
+}
+
+.button_release li 
+{
+
+  background-color:transparent;
+  list-style-type:none;
+  display:inline;
+  padding:0;
+  margin:0;
+}
+
+.button_release_retour:hover
+{
+  background-image:url("../pics/button/release_retour-hover.png");
+  height:35px;
+  width:35px;
+  z-index:;
+}
+.release_buy 
+{
+  background-color:#1a1a1a;
+  color:#FFF;
+  font-weight:bold;
+  padding:5px;
+  min-height:20px;
+  font-size:12px;
+  font-size:1.2rem;}
+
+  .release_buy img 
+  {
+    padding:0px 2px 0px 2px;
+  }
+
+  .release_price 
+  {
+    float:left;
+  }
+  .release_market 
+  {
+    float:right;
+  }
+
+  .release_buy a 
+  {
+    color:#FFF;
+    text-decoration:none; 
+  }
+
+  ul.release_download
+  {
+    margin:-10px 0px 10px -25px;
+  }
+
+  .release_download li
+  {
+    display:inline;
+    padding:8px;
+    background-color:#e6e6e6;
+    font-size:12px;
+    font-size:1.2em;
+  }
+
+  .release_share
+  {
+    color:#666;
+    font-size:12px;
+    font-size:1.2rem;
+  }
