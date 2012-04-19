@@ -1,0 +1,220 @@
+
+
+/*
+ * Header 
+ **********************/
+
+
+
+.release_open
+{
+ background-image:url(../pics/pattern/pat-bg.png);
+ background-repeat:repeat;
+ background-color:#fff;
+ padding:30px 0px 100px 0px;
+}
+
+
+
+
+
+
+
+/*
+ * header_nav_3 
+ *******************************/
+
+ /* upnav */
+
+ 
+
+/*
+  * DISCOGS 
+  ********************/
+
+
+
+ 
+
+
+/* artists */
+
+
+
+
+/* INFOS */
+
+
+/*
+ * footer 
+ *********************/
+
+
+
+ /*
+ * RELEASE OPEN */
+
+ .release_open h1, .release_open h2, .release_open h3,.release_title h1, .release_title h2, .release_title h3
+ {
+   font-weight:normal;
+   text-transform:uppercase;
+   font-family: 'Jockey One', sans-serif;
+ }
+
+ .release_open h1.title, .release_open h2.title, .release_open h3.title
+ {
+  color:#1A1A1A;
+  font-size:16px;
+  font-size:1.6rem;
+
+}
+.release_open h1.catalog  
+{
+  color: #29abe2;
+  font-size:20px;
+  font-size:2rem;
+}
+
+.release_open h2 
+{
+ margin-top:-30px;
+ font-size:33px;
+ font-size:3.3rem;
+ color:#1A1A1A;
+}
+
+.release_open h2 a
+{
+  color:#000;
+  text-decoration:none;
+}
+
+
+
+.release_artist_name
+{
+  font-size:33px;
+  font-size:3.3rem;
+  color:#b2b2b2;
+  margin-top:-40px;
+}
+
+.release_title h3
+{
+  color:#b2b2b2;
+}
+
+.release_playlist li 
+{
+  background-color: #e6e6e6;
+  padding:1px;
+  margin:2px;
+}
+
+ul.release_playlist
+{
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+.release_playlist li:before
+{
+  content: "";
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+.release_open li a 
+{
+  text-decoration:none;
+  color:#000;
+}
+
+.press_text
+{
+  color:#666;
+  margin-top:-10px; 
+  padding-bottom:20px;
+}
+
+ul.button_release
+{
+  margin-bottom:10px;
+  text-align:right;
+}
+
+.button_release li 
+{
+
+  background-color:transparent;
+  list-style-type:none;
+  display:inline;
+  padding:0;
+  margin:0;
+}
+
+.button_release_retour:hover
+{
+  background-image:url("../pics/button/release_retour-hover.png");
+  height:35px;
+  width:35px;
+  z-index:;
+}
+.release_buy 
+{
+  background-color:#1a1a1a;
+  color:#FFF;
+  font-weight:bold;
+  padding:5px;
+  min-height:20px;
+  font-size:12px;
+  font-size:1.2rem;}
+
+  .release_buy img 
+  {
+    padding:0px 2px 0px 2px;
+  }
+
+  .release_price 
+  {
+    float:left;
+  }
+  .release_market 
+  {
+    float:right;
+  }
+
+  .release_buy a 
+  {
+    color:#FFF;
+    text-decoration:none; 
+  }
+
+  ul.release_download
+  {
+    margin:-10px 0px 10px -25px;
+  }
+
+  .release_download li
+  {
+    display:inline;
+    padding:8px;
+    background-color:#e6e6e6;
+    font-size:12px;
+    font-size:1.2em;
+  }
+
+  .release_share
+  {
+    color:#666;
+    font-size:12px;
+    font-size:1.2rem;
+  }
